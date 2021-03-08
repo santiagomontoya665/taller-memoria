@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\catcode`\_=\active
+\def_{\_}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+% (3) load symbol definitions
+\usepackage{textcomp}
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Taller - Nociones de la memoria de un computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+    
+            
+        \vspace{1.5cm}
+            
+        \textbf{Santiago Montoya Leal}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Marzo de 2021
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Introducción}\label{intro}
+En este documento trata sobre los tipos de memoria del computador y su funcionalidad con los cuales se busca responder el taller – nociones de la memoria del computador: ¿Qué es la memoria de un computador?, mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo, describa la manera de cómo se gestiona la memoria de un computador y ¿Qué hace que la memoria sea más rápida que otra? ¿Porque esto es importante?.
+
+\section{Preguntas del taller -nociones de memoria del computador} \label{contenido}
+En esta sección se busca responder las 4 preguntas que están en el taller de nociones de memoria del computador.
+\subsection{¿Qué es la memoria de un computador?}
+ .\
+	La memoria es el dispositivo en el que se guarda toda la información de cualquier dispositivo electrónico, para que luego los microprocesadores de dicho dispositiva la procesen y hagan lo que el usuario necesite hacer, ya sea una suma o resta o hacer cambios en la información, se puede mirar la memoria como aquel almacén donde se guardan todos los productos de una fábrica o tienda alguien ira al almacén sacara algún objeto (información) y ara con el lo que necesite ya sea cambiarle el precio, botarlo o lo que el requiera.
+	\\\\
+La información guardada en la memoria puede durar poco tiempo o mucho tiempo dependiendo del tipo de memoria como las RAM que solo  tienen información en su tiempo de ejecución.
+
+\subsubsection{Disco Duro}
+\subsection{Tipos de memoria}
+Se abarcara los diferentes tipos de memoria del computador, si no solo hay disco duro y RAM , hay más tipos de memoria que se abarcaran a continuación. 
+\subsubsection{Disco Duro}
+Es nuestra bodega, nuestro lugar donde guardamos toda la información de nuestra computadora documentos, archivos, etc… von un tamaño muy diverso de 500Gb hasta 2Tb de espacio.
+Su función solamente eso recibir información.
+
+\subsubsection{Memoria RAM}
+Junto con los discos duros son las memorias más conocidas y que la gente desea tener en mayor cantidad dentro de su computadora. Es una memoria con poca capacidad de memoria de 4 a 32 gigabytes en los computadores modernos a comparación de un disco duro (500 Gb-1T).
+\vspace{10pt}
+
+La RAM es utilizada en la ejecución de un programa como el espacio donde se harán modificaciones al programa, ¿porque la RAM y no el disco duro sabiendo que tiene más espacio que la RAM? Por el espacio masivo del disco duro, al ser demasiados bloques de memoria el procesador tardaría mucho al buscar todo dentro del disco duro, eliminar y guardar nueva información mientras se ejecuta, sería un proceso que tardaría demasiado, por eso para la ejecución de un programa se busca dentro del disco duro y se monta una copia dentro de la memoria RAM.
+\vspace{10pt}
+
+
+Hay que tener en cuenta que la memoria RAM solo tiene información dentro de ella en tiempo ejecución, cuando se apague el computador toda la información dentro de ella se perderá.
+
+La RAM muchos la asocian a la velocidad del computador, y que en mayor RAM mejor, pero no, para mejorar el rendimiento del computador agregándole más RAM dependerá de la calidad de nuestro procesador, de cuantos núcleos tendrá o de cuanta memoria caché.
+
+\subsubsection{Memoria caché}
+
+Es un memoria mucho más pequeña que la memoria RAM está a la orden de kilobytes memoria cache L1,L2 y L3 donde la L1 tiene menos espacio pero es más rápida que las demás y por ende con menos espacio y más cara, varios de los procesadores cuentan con muchos núcleos con memorias cache para datos y memorias cache para instrucciones.
+
+\vspace{10pt}
+
+Su funcionamiento es simple en esa memoria se guardan datos que el procesador va a usar mucho en la ejecución de un programa para que no tarde mucho buscándolo dentro de la RAM.
+\subsubsection{Memoria virtual}
+
+Es la memoria que en el momento que se ejecute algún programa guardara los datos que menos se utilizaran dentro del programa, para que no ocupen espacio en la RAM
+
+\subsubsection{Memoria ROM}
+Es una memoria  que viene por defecto en la mother board que guarda un comando llamado POST el cual le ordena al procesador que haga un chequeo de cada uno de los componentes del computador para el correcto arranque del sistema.\cite{Augusto}
+\subsection{Gestión de memoria}
+
+Las memorias del computador están dividas en celdas donde se guardan bits que componen los bytes de información con loa que los microprocesadores trabajan.
+	La memoria RAM esta compuesta por capacitores  y transistores, donde los capacitores son los que guardan los bits de información  y los capacitores actúan como interruptores para que el microprocesador cambie o lea la información 
+\subsubsection{Velocidad en la memoria}
+Lo que hace que una memoria sea más rápida que otra depende de su espacio y de la calidad de nuestro procesador porque si a nuestro procesador le cuesta procesar datos en una memoria de 8Gb de RAM al tener una de 16 Gb de RAM se podrá tardar más en encontrar la información al estar repartida en más espacio y se calentara más nuestro procesador y en lo que respecta al espacio al cargar un programa que ocupara 9Gb de RAM dentro de una memoria de 8 Gb el programa no cargara o utilizara 1 Gb del disco duro lo que hará el procesamiento de datos mucho más lentos por ende si nuestro procesador lo permite y nuestro bolsillo también lo permite es bueno aumentar la cantidad de RAM aumentar la velocidad en los programas.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references.bib}
+
+
+\end{document}
